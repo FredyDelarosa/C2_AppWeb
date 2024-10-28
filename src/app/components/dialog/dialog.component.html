@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Detalles del Reporte</h1>
+<div mat-dialog-content>
+  <p><strong>ID:</strong> {{data.id}}</p>
+  <p><strong>Nombre Reportante:</strong> {{data.nombre_reportante}}</p>
+  <p><strong>Área del Equipo:</strong> {{data.area_equipo}}</p>
+  <p><strong>Propietario del Equipo:</strong> {{data.propietario_equipo}}</p>
+  <p><strong>Descripción de la Falla:</strong> {{data.descripcion_falla}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Cerrar</button>
+</div>

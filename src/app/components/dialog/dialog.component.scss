@@ -1,0 +1,23 @@
+mat-dialog-content {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+}

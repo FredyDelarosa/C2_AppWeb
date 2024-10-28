@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Actualizar Reporte</h1>
+<div mat-dialog-content>
+  <form [formGroup]="editForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre Reportante</mat-label>
+      <input matInput formControlName="nombre_reportante" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Área del equipo</mat-label>
+      <input matInput formControlName="area_equipo" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Propietario del equipo</mat-label>
+      <input matInput formControlName="propietario_equipo" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Descripción de la falla</mat-label>
+      <input matInput formControlName="descripcion_falla" />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button (click)="onSave()" [disabled]="!editForm.valid">Guardar</button>
+</div>

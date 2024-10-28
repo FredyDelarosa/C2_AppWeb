@@ -1,0 +1,17 @@
+mat-nav-list {
+  a {
+    color: #ffd000; // Dorado
+    &:hover {
+      background-color: #a9a9a9; // Azul marino
+      color: #a9a9a9; // Gris acero
+    }
+  }
+  
+  .active {
+    background-color: #a9a9a9; // Azul marino
+    color: #ffd700; // Dorado
+  }
+}
+
+
+

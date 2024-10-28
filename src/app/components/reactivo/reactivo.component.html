@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="report-form">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre Reportante</mat-label>
+    <input matInput id="nombre_reportante" formControlName="nombre_reportante" placeholder="Nombre del reportante" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Área del Equipo</mat-label>
+    <input matInput id="area_equipo" formControlName="area_equipo" placeholder="Área del equipo" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Propietario del Equipo</mat-label>
+    <input matInput id="propietario_equipo" formControlName="propietario_equipo" placeholder="Propietario del equipo" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Descripción de la Falla</mat-label>
+    <textarea matInput id="descripcion_falla" formControlName="descripcion_falla" placeholder="Descripción de la falla"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Guardar</button>
+</form>

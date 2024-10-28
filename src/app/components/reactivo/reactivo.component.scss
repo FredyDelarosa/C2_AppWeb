@@ -1,0 +1,13 @@
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; // Espaciado entre los campos
+
+  mat-form-field {
+    width: 100%; // Ocupa el 100% del contenedor
+  }
+
+  button {
+    align-self: flex-end; // Alinear el botón a la derecha
+  }
+}
